@@ -1,5 +1,6 @@
 var video;
 video = document.querySelector("#player1");
+volume_level = document.querySelector("#volume");
 
 // page load
 window.addEventListener("load", function() {
@@ -66,8 +67,6 @@ document.querySelector("#mute").addEventListener("click", function(){
 		document.querySelector('#mute').innerHTML = 'Unmute';
 	}
 })
-
-volume_level = document.querySelector("#volume");
 
 // for the volume slider ( 2 queries )
 document.querySelector("#slider").addEventListener("input", function(){
