@@ -9,7 +9,6 @@ window.addEventListener("load", function() {
 	// loop and autoplay
 	video.loop = false;
 	video.autoplay = false;
-	volume_level.innerHTML = video.volume * 100 + "%";
 });
 
 // to play the video (update vol info)
@@ -18,6 +17,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	video.defaultPlaybackRate = 1;
 	console.log("Current Volume: ",  video.volume);
+	volume_level.innerHTML = video.volume * 100 + "%";
 });
 
 // to pause the video
